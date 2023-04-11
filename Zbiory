@@ -1,0 +1,21 @@
+A = set(["antek", "mirek", "basia"])
+B = set(["ola", "kasia"])
+C = set(["piotr", "jacek", "kuba","ola","stas","antek"])
+
+print(A)
+print(B)
+print(C)
+
+print(A.union(B))  # połączenie zbioru A i B
+
+print(A.intersection(B)) # czesc wspolna A i B
+
+print(A & C & B)  # czesc wspolna A i B i C
+
+print(C.difference(A))  # w zbiorze C, ale nie ma ich w A
+
+print(B.difference(A & C))  # w zniorze B, ale nie ma ich w A i C
+
+print(A.union(B,C)) # w przynajmniej w jednym ze zbiorów - suma
+
+print(A.difference(B.union(C)))  # w zbiorze A, ale nie ma ich w sumie zbiorów B i C
